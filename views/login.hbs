@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
     <div class="container">
         <div class="CBRE Login">CBRE</div>
         <h1>Welcome Back!</h1>
-        <form action="/action_page.php">
-            <label for="uname" style="color: white;"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required style="color: white;">
+        <form action="/runscript" method="post">
+            <label for="email" style="color: white;"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required style="color: white;">
 
-                        <label for="psw" style="color: white;"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required style="color: white;">
+            <label for="psw" style="color: white;"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required style="color: white;">
 
-                        <button type="submit">Login</button>
-                        <label>
-                            <input type="checkbox" checked="checked" name="remember"> Remember me
-                        </label>
-                    </form>
-                    <p>Forgot <a href="#">password?</a></p>
-                </div>
-            </body>
+            <button type="submit">Login</button>
+            <label><input type="checkbox" checked="checked" name="remember"> Remember Me </label>
+        </form>
+
+        <p>Forgot <a href="#">password?</a></p>
+    </div>
+</body>
+
 </html>
-
